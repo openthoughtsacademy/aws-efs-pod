@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: nginx-pvc-claim
+  name: app1-pvc-claim
 spec:
-  storageClassName: aws-efs
+  storageClassName: aws-ebs
   accessModes:
     - ReadWriteMany
   resources:
