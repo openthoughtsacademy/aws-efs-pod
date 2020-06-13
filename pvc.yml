@@ -1,20 +1,4 @@
 apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: efs-pv
-  labels:
-    type: local
-spec:
-  storageClassName: aws-efs
-  capacity:
-    storage: 10Gi
-  accessModes:
-    - ReadWriteMany
-  hostPath:
-    path: "/efs-data"
-root@k8-master-2:~# 
-root@k8-master-2:~# more pvc.yml 
-apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: nginx-pvc-claim
