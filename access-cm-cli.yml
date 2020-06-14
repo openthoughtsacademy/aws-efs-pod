@@ -6,7 +6,7 @@ spec:
   containers:
     - name: consuming-container
       image: k8s.gcr.io/busybox
-      command: [ "/bin/sh", "-c", "echo $(KEY_ONE); echo $(DEVOPS)" ]
+      command: [ "/bin/sh", "-c", "echo $(KEY_ONE); echo $(DEVOPS)"; env ]
       env:
         - name: KEY_ONE
           valueFrom:
