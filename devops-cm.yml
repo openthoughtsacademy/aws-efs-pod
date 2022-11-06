@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: devops-configmap
+data:
+ key.1: Welcome to
+ key.2: Devops World
+ devops: |-
+  name="Devop Secret Key"
+  course="Devops Specialisation"
+  Trainer="Ashok Singh"
+  Chapter="Kubernetes - Behind the scene"
